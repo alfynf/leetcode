@@ -8,7 +8,6 @@ func romanToInt(s string) int {
 
 	for i := 0; i < len(s); i++ {
 		// kalau ada yang lebih kecil dan disimpen sebelumnya, pasti dikurangin
-		fmt.Println(i)
 		if i != len(s)-1 && roman[string(s[i])] < roman[string(s[i+1])] {
 			value = value + roman[string(s[i+1])] - roman[string(s[i])]
 			i = i + 1
